@@ -1,2 +1,67 @@
-# Advanced Modular VGA Controller (AMVGA) 
- This report details the development of the Advanced Modular VGA Controller (AMVGA), a student-led project aimed at creating a versatile VGA controller system. The AMVGA system addresses limitations found in traditional VGA controllers by offering support for multiple display resolutions and embedded output options. It provides users with flexibility, allowing them to select from various resolutions, including 640x480 and 1920x1080, and choose preset embedded outputs. Key components of the project include the design and implementation of VGA controllers for 640x480 and 1920x1080 resolutions, alongside an output generator component. These controllers generate essential signals such as horizontal sync (HS) and vertical sync (VS) pulses while providing outputs for red, green, and blue (RGB) colors. Additionally, a selector component enables users to seamlessly switch between different outputs and preset functions and modes, enhancing system versatility. The AMVGA system underwent rigorous simulation and testing using the Vivado Design suite to evaluate its performance in accurately and efficiently driving VGA displays. The modular design approach facilitates easy integration of additional output blocks, enabling future expansion and customization. While the project does not aim for groundbreaking achievements, it serves as a valuable learning experience for students, providing insights into VGA controller technology and fostering skills in hardware design, VHDL programming, and FPGA implementation. Index Terms: VGA controller, Versatile display resolutions, Embedded output options, Modular design, VHDL programming, FPGA implementation, Vivado Design suite, Hardware design, Simulation, Testing.
+
+# Advanced Modular VGA Controller (AMVGA)
+
+## Overview
+The Advanced Modular VGA Controller (AMVGA) is a FPGA-based project designed to explore and implement VGA controller systems using VHDL. The project focuses on providing modular VGA solutions that support various display resolutions including standard 640x480 and high-definition 1920x1080. This project was developed as part of an educational initiative to deepen understanding of digital design and FPGA technology.
+
+## Features
+- **Multiple Display Resolutions:** Supports 640x480 and 1920x1080 resolutions.
+- **Modular Design:** Easy integration and expansion with additional output blocks.
+- **Flexible Output Options:** Includes modules like `vga_stripes` and `prom_sprites` to demonstrate versatile output capabilities.
+- **Dynamic Resolution Switching:** Ability to switch between different resolutions during operation.
+- **Comprehensive Simulation:** Utilizes Xilinx Vivado Design Suite for simulation and testing.
+
+## Project Structure
+
+AMVGA/
+│
+├── src/                   # Source files including VHDL code for all modules
+│   ├── clkdiv.vhd
+│   ├── vga_640x480.vhd
+│   ├── vga_1920x1080.vhd
+│   ├── vga_stripes.vhd
+│   ├── prom_sprites.vhd
+│   └── VGA_16x32_sprites.vhd
+│
+├── test/
+│   ├── test_benches/      # Test bench files for module testing and integration
+│   └── simulation_results/ # Stored results from simulations
+│
+├── doc/
+│   └── project_report.pdf  # Comprehensive project report and documentation
+│
+└── README.md
+```
+
+## Getting Started
+To get started with the AMVGA project, clone this repository and open the project in Xilinx Vivado Design Suite.
+
+```bash
+git clone https://github.com/yourusername/AMVGA.git
+cd AMVGA
+```
+
+### Prerequisites
+- Xilinx Vivado Design Suite
+- FPGA development board compatible with the design (preferably one that supports the required I/O for VGA output)
+
+### Installation
+1. Open Vivado and set up a new project.
+2. Import all VHDL files from the `src/` directory.
+3. Compile the project and load it onto your FPGA board.
+
+## Simulation
+To run simulations:
+1. Navigate to the `test/test_benches/` directory.
+2. Open the test bench files in Vivado.
+3. Run the simulation scripts provided.
+
+## Contributing
+Contributions to the AMVGA project are welcome. Please ensure to follow the existing coding style and add unit tests for any new or changed functionality. Fork the repo and create a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+
+## Contact
+- Project Lead: [Kayoum Djedidi](djedidikayoum@ieee.org)
+- GitHub Profile: [My GitHub](https://github.com/kayoumdjedidi)
