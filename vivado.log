@@ -1,0 +1,317 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Apr  5 09:03:02 2024
+# Process ID: 77748
+# Current directory: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent77608 C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.xpr
+# Log file: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/vivado.log
+# Journal file: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/djedi/Desktop/3eme/Architecture Soc-FPGA/project_TP_VGA' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/djedi/OneDrive/Desktop/2eme/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 835.465 ; gain = 165.035
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 09:21:05 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+set_property BOARD_PART_REPO_PATHS {C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
+WARNING: [Board 49-91] Board repository path 'C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store' does not exist, it will not be used to search board files.
+set_param board.repoPaths {C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
+set_property board_part xilinx.com:zcu104:part0:1.1 [current_project]
+WARNING: [Project 1-153] The current project device 'xc7a100tcsg324-1' does not match with the device on the 'XILINX.COM:ZCU104:PART0:1.1' board part. A device change to match the device on 'XILINX.COM:ZCU104:PART0:1.1' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/vga code/vga_stripes_top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/new/vga_640x480.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/vga code/vga_stripes.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/project_vga/project_vga.srcs/sources_1/new/clk_div.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/vga code/vga_stripes_top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/new/vga_640x480.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/vga code/vga_stripes.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/project_vga/project_vga.srcs/sources_1/new/clk_div.vhd:]
+INFO: [Project 1-152] Project part set to zynquplus (xczu7ev-ffvc1156-2-e)
+reset_property board_connections [get_projects project_TP_VGA]
+set_property BOARD_PART_REPO_PATHS {C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
+set_param board.repoPaths {C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store}
+set_property board_part xilinx.com:zcu104:part0:1.1 [current_project]
+reset_property board_connections [get_projects project_TP_VGA]
+create_bd_design "design_1"
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+create_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1037.422 ; gain = 0.000
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference clkdiv clkdiv_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clock_out' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'clock_out': ASSOCIATED_BUSIF bus parameter is missing.
+CRITICAL WARNING: [IP_Flow 19-4751] Bus Interface 'clock_out': FREQ_HZ bus parameter is missing for output clock interface.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+create_bd_cell -type module -reference vga_stripes_top vga_stripes_top_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+delete_bd_objs [get_bd_cells clkdiv_0]
+delete_bd_objs [get_bd_cells vga_stripes_top_0]
+generate_target all [get_files  C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Exporting to file C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+export_simulation -of_objects [get_files C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files -ipstatic_source_dir C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/modelsim} {questa=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/questa} {riviera=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/riviera} {activehdl=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 09:24:25 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+create_bd_cell -type module -reference vga_stripes_top vga_stripes_top_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+open_bd_design {C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd}
+set_property library work [get_files  {{C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/vga code/vga_stripes_top.vhd}}]
+save_bd_design
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 09:35:13 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+reset_run synth_1
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 09:51:46 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+reset_run synth_1
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 09:52:32 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+reset_run synth_1
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 10:00:42 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+reset_run synth_1
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+WARNING: [IP_Flow 19-4706] Upgraded port 'btn' width 3 differs from original width 4
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_vga_stripes_top_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'design_1_vga_stripes_top_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 10:01:49 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+reset_run synth_1
+update_module_reference design_1_vga_stripes_top_0_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_vga_stripes_top_0_0 to use current project options
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs synth_1 -jobs 8
+[Fri Apr  5 10:04:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu7ev-ffvc1156-2-e
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2633.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 4 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2633.488 ; gain = 831.520
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_stripes_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj vga_stripes_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/project_vga/project_vga.srcs/sources_1/new/clk_div.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clkdiv'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/new/vga_640x480.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_640x480'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/vga code/vga_stripes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_stripes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/vga code/vga_stripes_top.vhd" into library work
+INFO: [VRFC 10-3107] analyzing entity 'vga_stripes_top'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim'
+"xelab -wto 69493668170b475eaf5e2e5fa69b3ed9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L work -L secureip -L xpm --snapshot vga_stripes_top_behav work.vga_stripes_top -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 69493668170b475eaf5e2e5fa69b3ed9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L work -L secureip -L xpm --snapshot vga_stripes_top_behav work.vga_stripes_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture bhv of entity xil_defaultlib.clkdiv [clkdiv_default]
+Compiling architecture arch640x480 of entity xil_defaultlib.vga_640x480 [vga_640x480_default]
+Compiling architecture arch_stripes of entity xil_defaultlib.vga_stripes [vga_stripes_default]
+Compiling architecture arch_stripes_top of entity work.vga_stripes_top
+Built simulation snapshot vga_stripes_top_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim/xsim.dir/vga_stripes_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr  5 10:05:45 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_stripes_top_behav -key {Behavioral:sim_1:Functional:vga_stripes_top} -tclbatch {vga_stripes_top.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source vga_stripes_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_stripes_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 4734.355 ; gain = 165.203
+add_bp {C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/vga code/vga_stripes.vhd} 16
+remove_bps -file {C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/imports/Architecture Soc-FPGA/vga code/vga_stripes.vhd} -line 16
+generate_target all [get_files  C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/vga_stripes_top_0/mclk
+/vga_stripes_top_0/btn
+
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vga_stripes_top_0 .
+Exporting to file C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 8 design_1_vga_stripes_top_0_0_synth_1
+[Fri Apr  5 10:30:26 2024] Launched design_1_vga_stripes_top_0_0_synth_1...
+Run output will be captured here: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/design_1_vga_stripes_top_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files -ipstatic_source_dir C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/modelsim} {questa=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/questa} {riviera=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/riviera} {activehdl=C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.3 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+delete_bd_objs [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vcu_ddr4_controller:1.0 vcu_ddr4_controller_0
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 4734.355 ; gain = 0.000
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {clk_300mhz ( Programmable Differential Clock (300MHz) ) } Manual_Source {Auto}}  [get_bd_intf_pins vcu_ddr4_controller_0/c0_sys]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 clk_300mhz
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /clk_300mhz
+INFO: [board_rule 100-100] connect_bd_intf_net /clk_300mhz /vcu_ddr4_controller_0/c0_sys
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 300000000 /clk_300mhz
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+delete_bd_objs [get_bd_cells axi_dma_0]
+startgroup
+create_bd_port -dir I mclk
+connect_bd_net [get_bd_pins /vga_stripes_top_0/mclk] [get_bd_ports mclk]
+endgroup
+startgroup
+create_bd_port -dir I -from 2 -to 0 btn
+connect_bd_net [get_bd_pins /vga_stripes_top_0/btn] [get_bd_ports btn]
+endgroup
+startgroup
+create_bd_port -dir O hsync
+connect_bd_net [get_bd_pins /vga_stripes_top_0/hsync] [get_bd_ports hsync]
+endgroup
+startgroup
+create_bd_port -dir O vsync
+connect_bd_net [get_bd_pins /vga_stripes_top_0/vsync] [get_bd_ports vsync]
+endgroup
+startgroup
+create_bd_port -dir O -from 2 -to 0 red
+connect_bd_net [get_bd_pins /vga_stripes_top_0/red] [get_bd_ports red]
+endgroup
+delete_bd_objs [get_bd_intf_nets clk_300mhz_1] [get_bd_cells vcu_ddr4_controller_0]
+delete_bd_objs [get_bd_intf_ports clk_300mhz]
+refresh_design
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+save_bd_design
+Wrote  : <C:\Users\djedi\OneDrive\Desktop\2eme\S2\VHDL\vga_controller\project_TP_VGA\project_TP_VGA.srcs\sources_1\bd\design_1\design_1.bd> 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr  5 10:54:10 2024...

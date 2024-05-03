@@ -1,0 +1,1 @@
+-wto "69493668170b475eaf5e2e5fa69b3ed9" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "work" -L "secureip" -L "xpm" --snapshot "vga_stripes_top_behav" "work.vga_stripes_top" -log "elaborate.log" 

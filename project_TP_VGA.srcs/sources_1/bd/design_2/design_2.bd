@@ -1,0 +1,490 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9674BBFBD5E1D1D4",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "name": "design_2",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vga_stripes_0": "",
+      "clk_wiz": "",
+      "prom_sprites_0": "",
+      "VGA_16x32_sprites_0": "",
+      "SelBlock_0": "",
+      "VGA_dynamic_res_0": "",
+      "clkdiv_0": ""
+    },
+    "ports": {
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_2_clk_100MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "btn": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "hsync": {
+        "direction": "O"
+      },
+      "vsync": {
+        "direction": "O"
+      },
+      "blue": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "green": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "red": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "sel_module": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "blue1": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "green1": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "red1": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "sel_resolution": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "vga_stripes_0": {
+        "vlnv": "xilinx.com:module_ref:vga_stripes:1.0",
+        "xci_name": "design_2_vga_stripes_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_stripes",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "vidon": {
+            "direction": "I"
+          },
+          "hc": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vc": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "clk_wiz": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_2_clk_wiz_0",
+        "parameters": {
+          "RESET_BOARD_INTERFACE": {
+            "value": "reset"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
+      },
+      "prom_sprites_0": {
+        "vlnv": "xilinx.com:module_ref:prom_sprites:1.0",
+        "xci_name": "design_2_prom_sprites_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "prom_sprites",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "addr": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Output_sprite": {
+            "direction": "O",
+            "left": "0",
+            "right": "31"
+          }
+        }
+      },
+      "VGA_16x32_sprites_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_16x32_sprites:1.0",
+        "xci_name": "design_2_VGA_16x32_sprites_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_16x32_sprites",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hc": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vc": {
+            "direction": "I",
+            "left": "9",
+            "right": "0"
+          },
+          "vidon": {
+            "direction": "I"
+          },
+          "rom_data": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "rom_addr": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "SelBlock_0": {
+        "vlnv": "xilinx.com:module_ref:SelBlock:1.0",
+        "xci_name": "design_2_SelBlock_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "SelBlock",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "vidon": {
+            "direction": "I"
+          },
+          "out1": {
+            "direction": "O"
+          },
+          "out2": {
+            "direction": "O"
+          }
+        }
+      },
+      "VGA_dynamic_res_0": {
+        "vlnv": "xilinx.com:module_ref:VGA_dynamic_res:1.0",
+        "xci_name": "design_2_VGA_dynamic_res_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VGA_dynamic_res",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_2_clkdiv_0_0_clock_out",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "sel_resolution": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          },
+          "hc": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vc": {
+            "direction": "O",
+            "left": "9",
+            "right": "0"
+          },
+          "vidon": {
+            "direction": "O"
+          }
+        }
+      },
+      "clkdiv_0": {
+        "vlnv": "xilinx.com:module_ref:clkdiv:1.0",
+        "xci_name": "design_2_clkdiv_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clkdiv",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clock_out": {
+            "type": "clk",
+            "direction": "O"
+          },
+          "mclk": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "design_2_clk_wiz_0_clk_out1",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "clr": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "clk_wiz/clk_in1"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "clkdiv_0/clr"
+        ]
+      },
+      "vga_stripes_0_red": {
+        "ports": [
+          "vga_stripes_0/red",
+          "red"
+        ]
+      },
+      "vga_stripes_0_green": {
+        "ports": [
+          "vga_stripes_0/green",
+          "green"
+        ]
+      },
+      "vga_stripes_0_blue": {
+        "ports": [
+          "vga_stripes_0/blue",
+          "blue"
+        ]
+      },
+      "SelBlock_0_out1": {
+        "ports": [
+          "SelBlock_0/out1",
+          "vga_stripes_0/vidon"
+        ]
+      },
+      "SelBlock_0_out2": {
+        "ports": [
+          "SelBlock_0/out2",
+          "VGA_16x32_sprites_0/vidon"
+        ]
+      },
+      "sel_1": {
+        "ports": [
+          "sel_module",
+          "SelBlock_0/sel"
+        ]
+      },
+      "prom_sprites_0_Output_sprite": {
+        "ports": [
+          "prom_sprites_0/Output_sprite",
+          "VGA_16x32_sprites_0/rom_data"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "VGA_16x32_sprites_0/sw"
+        ]
+      },
+      "VGA_16x32_sprites_0_rom_addr": {
+        "ports": [
+          "VGA_16x32_sprites_0/rom_addr",
+          "prom_sprites_0/addr"
+        ]
+      },
+      "VGA_16x32_sprites_0_red": {
+        "ports": [
+          "VGA_16x32_sprites_0/red",
+          "red1"
+        ]
+      },
+      "VGA_16x32_sprites_0_green": {
+        "ports": [
+          "VGA_16x32_sprites_0/green",
+          "green1"
+        ]
+      },
+      "VGA_16x32_sprites_0_blue": {
+        "ports": [
+          "VGA_16x32_sprites_0/blue",
+          "blue1"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz/reset",
+          "VGA_dynamic_res_0/clr"
+        ]
+      },
+      "clk_wiz_clk_out1": {
+        "ports": [
+          "clk_wiz/clk_out1",
+          "clkdiv_0/mclk"
+        ]
+      },
+      "clkdiv_0_clock_out": {
+        "ports": [
+          "clkdiv_0/clock_out",
+          "VGA_dynamic_res_0/clk"
+        ]
+      },
+      "sel_resolution_1": {
+        "ports": [
+          "sel_resolution",
+          "VGA_dynamic_res_0/sel_resolution"
+        ]
+      },
+      "VGA_dynamic_res_0_hc": {
+        "ports": [
+          "VGA_dynamic_res_0/hc",
+          "VGA_16x32_sprites_0/hc",
+          "vga_stripes_0/hc",
+          "VGA_16x32_sprites_0/vc"
+        ]
+      },
+      "VGA_dynamic_res_0_vidon": {
+        "ports": [
+          "VGA_dynamic_res_0/vidon",
+          "SelBlock_0/vidon"
+        ]
+      },
+      "VGA_dynamic_res_0_vc": {
+        "ports": [
+          "VGA_dynamic_res_0/vc",
+          "vga_stripes_0/vc"
+        ]
+      },
+      "VGA_dynamic_res_0_hsync": {
+        "ports": [
+          "VGA_dynamic_res_0/hsync",
+          "hsync",
+          "vsync"
+        ]
+      }
+    }
+  }
+}

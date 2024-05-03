@@ -1,0 +1,30 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port mclk -pg 1 -lvl 0 -x -10 -y 100 -defaultsOSRD
+preplace port hsync -pg 1 -lvl 2 -x 310 -y 40 -defaultsOSRD
+preplace port vsync -pg 1 -lvl 2 -x 310 -y 70 -defaultsOSRD
+preplace port sel_module -pg 1 -lvl 0 -x -10 -y 40 -defaultsOSRD
+preplace port sel_resolution -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -10 -y 130 -defaultsOSRD
+preplace portBus red -pg 1 -lvl 2 -x 310 -y 100 -defaultsOSRD
+preplace portBus green -pg 1 -lvl 2 -x 310 -y 130 -defaultsOSRD
+preplace portBus blue -pg 1 -lvl 2 -x 310 -y 160 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace inst AMVGA_0 -pg 1 -lvl 1 -x 150 -y 100 -defaultsOSRD
+preplace netloc sel_module_1 1 0 1 10J 40n
+preplace netloc sel_resolution_1 1 0 1 10J 70n
+preplace netloc mclk_1 1 0 1 NJ 100
+preplace netloc btn_1 1 0 1 10J 120n
+preplace netloc sw_1 1 0 1 10J 140n
+preplace netloc AMVGA_0_hsync 1 1 1 280J 40n
+preplace netloc AMVGA_0_vsync 1 1 1 280J 70n
+preplace netloc AMVGA_0_red 1 1 1 NJ 100
+preplace netloc AMVGA_0_green 1 1 1 280J 120n
+preplace netloc AMVGA_0_blue 1 1 1 280J 140n
+levelinfo -pg 1 -10 150 310
+pagesize -pg 1 -db -bbox -sgen -150 0 430 200
+"
+}
+0

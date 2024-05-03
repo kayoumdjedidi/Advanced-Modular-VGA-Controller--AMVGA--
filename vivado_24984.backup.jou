@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Feb 16 09:59:41 2024
+# Process ID: 24984
+# Current directory: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30612 D:\educational\3eme\Architecture Soc-FPGA\project_TP_VGA\project_TP_VGA.xpr
+# Log file: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA/vivado.log
+# Journal file: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA/project_TP_VGA.xpr}
+update_compile_order -fileset sources_1

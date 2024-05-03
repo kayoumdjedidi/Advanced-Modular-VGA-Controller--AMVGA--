@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Feb 16 09:59:41 2024
+# Process ID: 24984
+# Current directory: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30612 D:\educational\3eme\Architecture Soc-FPGA\project_TP_VGA\project_TP_VGA.xpr
+# Log file: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA/vivado.log
+# Journal file: D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/educational/3eme/Architecture Soc-FPGA/project_TP_VGA/project_TP_VGA.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/djedi/Desktop/3eme/Architecture Soc-FPGA/project_TP_VGA' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store', nor could it be found using path 'C:/Users/djedi/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:nexys4_ddr:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 861.867 ; gain = 154.355
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 16 10:00:29 2024...

@@ -1,0 +1,173 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2B2824D82B2824D8",
+      "device": "xczu7ev-ffvc1156-2-e",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "AMVGA_0": ""
+    },
+    "ports": {
+      "mclk": {
+        "direction": "I"
+      },
+      "btn": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "hsync": {
+        "direction": "O"
+      },
+      "vsync": {
+        "direction": "O"
+      },
+      "red": {
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "green": {
+        "type": "data",
+        "direction": "O",
+        "left": "2",
+        "right": "0"
+      },
+      "blue": {
+        "type": "data",
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "sel_module": {
+        "direction": "I"
+      },
+      "sel_resolution": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "AMVGA_0": {
+        "vlnv": "xilinx.com:module_ref:AMVGA:1.0",
+        "xci_name": "design_1_AMVGA_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AMVGA",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel_module": {
+            "direction": "I"
+          },
+          "sel_resolution": {
+            "direction": "I"
+          },
+          "mclk": {
+            "direction": "I"
+          },
+          "btn": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "sw": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          },
+          "red": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "sel_module_1": {
+        "ports": [
+          "sel_module",
+          "AMVGA_0/sel_module"
+        ]
+      },
+      "sel_resolution_1": {
+        "ports": [
+          "sel_resolution",
+          "AMVGA_0/sel_resolution"
+        ]
+      },
+      "mclk_1": {
+        "ports": [
+          "mclk",
+          "AMVGA_0/mclk"
+        ]
+      },
+      "btn_1": {
+        "ports": [
+          "btn",
+          "AMVGA_0/btn"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "AMVGA_0/sw"
+        ]
+      },
+      "AMVGA_0_hsync": {
+        "ports": [
+          "AMVGA_0/hsync",
+          "hsync"
+        ]
+      },
+      "AMVGA_0_vsync": {
+        "ports": [
+          "AMVGA_0/vsync",
+          "vsync"
+        ]
+      },
+      "AMVGA_0_red": {
+        "ports": [
+          "AMVGA_0/red",
+          "red"
+        ]
+      },
+      "AMVGA_0_green": {
+        "ports": [
+          "AMVGA_0/green",
+          "green"
+        ]
+      },
+      "AMVGA_0_blue": {
+        "ports": [
+          "AMVGA_0/blue",
+          "blue"
+        ]
+      }
+    }
+  }
+}

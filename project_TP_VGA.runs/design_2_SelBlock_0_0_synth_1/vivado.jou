@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 23 20:06:04 2024
+# Process ID: 101696
+# Current directory: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/design_2_SelBlock_0_0_synth_1
+# Command line: vivado.exe -log design_2_SelBlock_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_SelBlock_0_0.tcl
+# Log file: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/design_2_SelBlock_0_0_synth_1/design_2_SelBlock_0_0.vds
+# Journal file: C:/Users/djedi/OneDrive/Desktop/2eme/S2/VHDL/vga_controller/project_TP_VGA/project_TP_VGA.runs/design_2_SelBlock_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_2_SelBlock_0_0.tcl -notrace
